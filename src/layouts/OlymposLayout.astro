@@ -1,18 +1,24 @@
 ---
-
+import "@fontsource-variable/aleo";
 ---
 
 <!doctype html>
-<html lang="en" class="bg-slate-50">
+<html lang="en" class="bg-sky-50 bg-opacity-40">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>Come to Olympos!</title>
+    <title>Visit Olympos!</title>
   </head>
-  <body
-    class="py-24 mx-auto prose-xl prose-headings:font-serif prose-h1:underline prose-h1:underline-offset-4 prose-headings:font-bold prose-headings:text-4xl prose-neutral max-w-3xl text-xl prose-img:rounded-2xl prose-blockquote:py-1.5 prose-blockquote:px-8 prose-blockquote:bg-yellow-50 prose-blockquote:border-l-8 prose-blockquote:border-yellow-200 prose-blockquote:rounded-r-xl prose-ul:list-disc">
-    <slot />
+  <body>
+    <h1
+      class="shadow-sm shadow-sky-800 w-full text-center font-bold font-serif bg-white text-5xl border-b-[1.5px] border-sky-700 border-opacity-70 py-5">
+      Visit Olympos!
+    </h1>
+    <div
+      class="my-12 mx-auto prose-xl prose-headings:font-serif prose-h1:text-center prose-h1:text-4xl prose-h1:text-sky-800 prose-headings:font-bold prose-headings:text-3xl prose-neutral max-w-3xl text-xl prose-blockquote:py-1.5 prose-blockquote:px-8 prose-blockquote:bg-white prose-blockquote:border-l-8 prose-blockquote:border-sky-200 prose-blockquote:rounded-r-xl prose-ul:list-disc prose-ul:list-outside prose-ul:px-8 prose-ul:divide-y prose-ul:bg-white prose-ul:rounded-xl prose-ul:border-2 marker:text-sky-700 marker:text-2xl prose-li:px-2 prose-li:py-4 prose-li:list-inside prose-li:my-0 prose-hr:w-3/4 prose-hr:mx-auto prose-hr:border-sky-900 prose-hr:border-opacity-50">
+      <slot />
+    </div>
   </body>
 </html>

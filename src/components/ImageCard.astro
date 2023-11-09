@@ -1,0 +1,23 @@
+---
+interface Props {
+  src: string;
+  subtitle?: string;
+  source?: string;
+}
+
+const { src, subtitle, source } = Astro.props;
+---
+
+<div class="text-center my-8">
+  <img
+    src={src}
+    alt={subtitle}
+    class="mb-0 mt-0 rounded-t-2xl border-x-2 border-t-2 border-sky-900 border-opacity-30"
+  />
+  <p
+    class="mt-0 mb-0 py-4 font-semibold rounded-b-2xl w-full bg-white border-x-2 border-b-2 border-sky-900 border-opacity-30">
+    {subtitle}
+    <br />
+    {source && <span class="text-sm font-normal italic">{source}</span>}
+  </p>
+</div>
